@@ -1,0 +1,7 @@
+- type: latheRecipe
+  id: MakeshiftHelmet
+  result: MakeshiftHelmet
+  completetime: 5
+  materials:
+    Steel: 300
+    Plastic: 300

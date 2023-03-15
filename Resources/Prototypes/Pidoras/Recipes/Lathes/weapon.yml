@@ -1,0 +1,8 @@
+- type: latheRecipe
+  id: MakeshiftLaser
+  result: MakeshiftLaser
+  completetime: 4
+  materials:
+    Steel: 1000
+    Glass: 1000
+    Gold: 300

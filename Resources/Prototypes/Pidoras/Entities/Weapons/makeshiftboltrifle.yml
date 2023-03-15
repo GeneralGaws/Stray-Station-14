@@ -1,0 +1,10 @@
+- type: entity
+  name: Makeshift bolt rifle
+  parent: BaseWeaponSniper
+  id: MakeshiftBoltRifle
+  description: A weapon for hunting, or endless trench warfare. Uses .30 rifle ammo.
+  components:
+  - type: Sprite
+    sprite: Pidoras/Objects/Weapons/Sniper/RnDSniperRifle.rsi
+  - type: Clothing
+    sprite: Pidoras/Objects/Weapons/Sniper/RnDSniperRifle.rsi

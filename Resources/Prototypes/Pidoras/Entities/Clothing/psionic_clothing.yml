@@ -1,0 +1,20 @@
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesMetapsionicSpectacles
+  name: Mantis Spectacles
+  suffix: PSIONIC
+  description: A pair of spectacular and strange spectacles with lenses constructed of an unknown material.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/sunglasses.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/sunglasses.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: VisionCorrection
+  - type: ClothingGrantPsionicPower
+    power: MetapsionicPower
+  - type: Tag
+    tags:
+    - GlassesNearsight

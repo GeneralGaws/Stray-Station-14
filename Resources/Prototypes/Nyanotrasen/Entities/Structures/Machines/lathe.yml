@@ -53,6 +53,9 @@
       - CableMVStack
       - CableHVStack
       - NodeScanner
+      - PinpointerAnomaly
+      - PinpointerArtifact
+      - CrystalNormality
   - type: MaterialStorage
     whitelist:
       tags:

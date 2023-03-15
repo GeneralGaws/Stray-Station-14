@@ -1,0 +1,14 @@
+- type: entity
+  parent: VehicleKeyPussyWagon
+  id: VehicleKeyKolyaska
+  name: Kolyaska access key
+  description: The keys to the future.
+  components:
+  - type: Tag
+    tags:
+    - VehicleKey
+    - VehicleKeyKolyaska
+  - type: Sprite
+    sprite: Objects/Vehicles/secway.rsi
+    state: keys
+    netsync: false

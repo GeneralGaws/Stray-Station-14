@@ -1,0 +1,7 @@
+- type: latheRecipe
+  id: ClothingOuterArmorMakeshift
+  result: ClothingOuterArmorMakeshift
+  completetime: 5
+  materials:
+    Steel: 400
+    Plastic: 400

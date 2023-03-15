@@ -1,0 +1,16 @@
+- type: entity
+  id: BaseResearchAndDevelopmentPointSourceCircuitBoard
+  parent: BaseMachineCircuitboard
+  name: Base R&D point source
+  components:
+    - type: Sprite
+      state: science
+    - type: MachineBoard
+      prototype: BaseResearchAndDevelopmentPointSourceCircuitBoard
+      requirements:
+       ScanningModule: 4
+       Capacitor: 2
+       Laser: 4
+      materialRequirements:
+       PlasmaGlass: 5
+       Cable: 5

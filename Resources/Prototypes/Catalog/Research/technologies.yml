@@ -57,6 +57,7 @@
   - MicrowaveMachineCircuitboard
   - BoozeDispenserMachineCircuitboard
   - SodaDispenserMachineCircuitboard
+  - ServiceTechFabCircuitboard
 
 # Biological Technology Tree
 
@@ -147,6 +148,7 @@
   - PillCanister
   - ChemistryEmptyBottle01
   - ChemicalPayload
+  - MedicalTechFabCircuitboard
 
 - type: technology
   name: technologies-advanced-surgery
@@ -252,7 +254,6 @@
     - Flash
     - Handcuffs
     - Stunbaton
-    - FlashPayload
     - InsulativeHeadcage
 
 - type: technology
@@ -306,28 +307,36 @@
   unlockedRecipes:
     - Decloner
 
-#
-# - type: technology
-#   name: "explosives technology"
-#   id: ExplosivesTechnology
-#   description: Let's just start with grenades for now.
-#   icon:
-#     sprite: Objects/Weapons/Grenades/flashbang.rsi
-#     state: icon
-#   requiredPoints: 15000
-#   requiredTechnologies:
-#     - SecurityTechnology
-#
-# - type: technology
-#   name: "armor technology"
-#   id: ArmorTechnology
-#   description: Basic protective gear for security personnel.
-#   icon:
-#     sprite: Clothing/OuterClothing/Vests/kevlar.rsi
-#     state: icon
-#   requiredPoints: 15000
-#   requiredTechnologies:
-#     - SecurityTechnology
+
+- type: technology
+  name: "explosives technology"
+  id: ExplosivesTechnology
+  description: Let's just start with grenades for now.
+  icon:
+    sprite: Objects/Weapons/Grenades/flashbang.rsi
+    state: icon
+  requiredPoints: 7500
+  requiredTechnologies:
+   - SecurityTechnology
+  unlockedRecipes:
+   - SignalTrigger
+   - VoiceTrigger
+   - TimerTrigger
+   - FlashPayload
+
+- type: technology
+  name: "armor technology"
+  id: ArmorTechnology
+  description: Basic protective gear for security personnel.
+  icon:
+    sprite: Clothing/OuterClothing/Vests/kevlar.rsi
+    state: icon
+  requiredPoints: 15000
+  requiredTechnologies:
+    - SecurityTechnology
+  unlockedRecipes:
+   - ClothingOuterArmorMakeshift
+   - MakeshiftHelmet
 
 # Salvage Technology Tree
 
@@ -345,6 +354,23 @@
   - AppraisalTool
   - MiningDrill
   - OreProcessorMachineCircuitboard
+
+- type: technology
+  name: technologies-spacefaring
+  id: SpacefaringTechnology
+  description: technologies-spacefaring-description
+  icon:
+    sprite: Structures/Shuttles/gyroscope.rsi
+    state: base
+  requiredPoints: 10000
+  requiredTechnologies:
+  - SalvageEquipment
+  - IndustrialEngineering
+  unlockedRecipes:
+  - ShuttleConsoleCircuitboard
+  - RadarConsoleCircuitboard
+  - ThrusterMachineCircuitboard
+  - GyroscopeMachineCircuitboard
 
 - type: technology
   name: technologies-ripley-technology
@@ -389,6 +415,7 @@
   - ProtolatheMachineCircuitboard
   - CircuitImprinterMachineCircuitboard
   - UniformPrinterMachineCircuitboard
+  - ScienceTechFabCircuitboard
   - AirAlarmElectronics
   - FireAlarmElectronics
   - MailingUnitElectronics
@@ -431,14 +458,6 @@
   - APCElectronics
   - SubstationMachineCircuitboard
   - Signaller
-  - SignalTrigger
-  - VoiceTrigger
-  - TimerTrigger
-  - CapacitorStockPart
-  - MatterBinStockPart
-  - MicroLaserStockPart
-  - MicroManipulatorStockPart
-  - ScanningModuleStockPart
 
 - type: technology
   name: technologies-electrical-engineering
@@ -458,6 +477,7 @@
   - GeneratorPlasmaMachineCircuitboard
   - GeneratorUraniumMachineCircuitboard
   - SolarControlComputerCircuitboard
+  - SolarTrackerElectronics
   - EmitterCircuitboard
   - Holoprojector
   - RadarConsoleCircuitboard
@@ -599,6 +619,7 @@
   - RightArmBorg
   - Drone
   - ExosuitFabricatorMachineCircuitboard
+  - EngineeringTechFabCircuitboard
   - ClothingEyesHudDiagnostic
   - ClothingEyesHudDiagnosticPrescription
 
@@ -632,8 +653,11 @@
   - BasicResearch
   unlockedRecipes:
   - TechDiskComputerCircuitboard
-  - NodeScanner
-  - AnomalyScanner
+  - CapacitorStockPart
+  - MatterBinStockPart
+  - MicroLaserStockPart
+  - MicroManipulatorStockPart
+  - ScanningModuleStockPart
 
 - type: technology
   name: technologies-anomaly-technology
@@ -648,6 +672,8 @@
   unlockedRecipes:
   - AnomalyVesselCircuitboard
   - APECircuitboard
+  - PinpointerAnomaly
+  - AnomalyScanner
 
 - type: technology
   name: technologies-archaeology
@@ -663,6 +689,9 @@
   - AnalysisComputerCircuitboard
   - ArtifactAnalyzerMachineCircuitboard
   - TraversalDistorterMachineCircuitboard
+  - PinpointerArtifact
+  - BaseResearchAndDevelopmentPointSourceCircuitBoard
+  - NodeScanner
 
 - type: technology
   name: technologies-bluespace-technology
@@ -681,6 +710,7 @@
     - SatchelOfHolding
     - DuffelbagOfHolding
     - TrashBagOfHolding
+    - CrystalNormality
 
 - type: technology
   name: technologies-teleportation-technology

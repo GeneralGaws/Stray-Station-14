@@ -1,0 +1,9 @@
+- type: latheRecipe
+  id: CrystalNormality
+  result: CrystalNormality
+  completetime: 4
+  materials:
+    Steel: 200
+    Glass: 100
+    Gold: 150
+    Plasma: 100

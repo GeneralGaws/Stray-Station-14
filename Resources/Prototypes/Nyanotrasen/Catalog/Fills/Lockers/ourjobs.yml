@@ -13,6 +13,8 @@
       - id: DoorRemoteResearch
       - id: HandTeleporter
       - id: RubberStampRd
+      - id: CircuitImprinterMachineCircuitboard
+      - id: ProtolatheMachineCircuitboard
 
 - type: entity
   id: LockerEpistemicsFilled
@@ -39,6 +41,7 @@
       - id: ForensicScanner
       - id: BoxForensicPad
       - id: AntiPsychicKnife
+      - id: Handcuffs
       # Spare change of clothes
       - id: ClothingUniformJumpsuitMantis
       - id: ClothingUniformSkirtMantis
@@ -50,6 +53,7 @@
       - id: ClothingOuterCoatMantis
       - id: ClothingOuterWinterCoatMantis
       - id: ClothingEyesGlassesSunglasses
+      - id: ClothingEyesMetapsionicSpectacles
       # Insulative headgear
       - id: ClothingHeadHelmetInsulated
       - id: ClothingHeadCage

@@ -1,0 +1,17 @@
+#- type: construction
+#  name: Altar
+#  id: AltarSatana
+#  graph: Table
+#  startNode: start
+#  targetNode: AltarSatana
+#  category: construction-category-furniture
+#  description: Pray.
+#  icon:
+#    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+#    state: satana
+#  objectType: Structure
+#  placementMode: SnapgridCenter
+#  canBuildInImpassable: false
+#  conditions:
+#    - !type:TileNotBlocked
+

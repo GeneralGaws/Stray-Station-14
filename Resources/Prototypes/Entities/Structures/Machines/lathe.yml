@@ -211,6 +211,8 @@
       - PowerCellSmall
       - PowerCellMedium
       - PowerCellHigh
+      - FlashPayload
+      - BikeHorn
 
 - type: entity
   parent: Protolathe
@@ -300,6 +302,16 @@
       - TraversalDistorterMachineCircuitboard
       - BoozeDispenserMachineCircuitboard
       - SodaDispenserMachineCircuitboard
+      - BaseResearchAndDevelopmentPointSourceCircuitBoard
+      - SolarTrackerElectronics
+      - MedicalTechFabCircuitboard
+      - EngineeringTechFabCircuitboard
+      - ServiceTechFabCircuitboard
+      - ScienceTechFabCircuitboard
+      - ShuttleConsoleCircuitboard
+      - RadarConsoleCircuitboard
+      - ThrusterMachineCircuitboard
+      - GyroscopeMachineCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
@@ -341,6 +353,9 @@
     - ClothingOuterHardsuitSyndieReverseEngineered
     - JetpackBlue
     - JetpackMini
+    - MakeshiftHelmet
+    - ClothingOuterArmorMakeshift
+    - MakeshiftLaser
   - type: MaterialStorage
     whitelist:
       tags:
@@ -426,6 +441,7 @@
       - CableStack
       - CableMVStack
       - CableHVStack
+      - MakeshiftLaser
   - type: MaterialStorage
     whitelist:
       tags:

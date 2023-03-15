@@ -1,0 +1,37 @@
+- type: entity
+  name: Makeshift laser pistol
+  parent: BaseWeaponBatterySmall
+  id: MakeshiftLaser
+  description: Not for revolution!
+  components:
+  - type: Sprite
+    sprite: Pidoras/Objects/Weapons//Pistol/RnDLaserPistol.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: Pidoras/Objects/Weapons/Pistol/RnDLaserPistol.rsi
+    state: base
+  - type: HitscanBatteryAmmoProvider
+    proto: RedSmallLaser
+    fireCost: 150
+  - type: Battery
+    maxCharge: 900
+    startingCharge: 0
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: true
+  - type: Appearance
+  - type: TriggerOnActivate
+    prob: 0.9
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 10
+    intensitySlope: 3
+    totalIntensity: 120
+    canCreateVacuum: false

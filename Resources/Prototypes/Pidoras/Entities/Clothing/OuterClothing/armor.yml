@@ -1,0 +1,18 @@
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterArmorMakeshift
+  name: Makeshift vest
+  description: An armored vest with heavy plates to protect against ballistic projectiles.
+  components:
+  - type: Sprite
+    sprite: Pidoras/Clothing/armor/RnDArmor.rsi
+  - type: Clothing
+    sprite: Pidoras/Clothing/armor/RnDArmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.7
+        Heat: 0.9
+

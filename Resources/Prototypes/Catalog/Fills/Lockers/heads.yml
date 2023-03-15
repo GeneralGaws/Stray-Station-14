@@ -146,6 +146,8 @@
       - id: DoorRemoteResearch
       - id: RubberStampRd
       - id: ClothingHeadsetAltScience
+      - id: CircuitImprinterMachineCircuitboard
+      - id: ProtolatheMachineCircuitboard
 
 - type: entity
   id: LockerHeadOfSecurityFilled

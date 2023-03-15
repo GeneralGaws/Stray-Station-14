@@ -1,0 +1,46 @@
+- type: entity
+  id: Kolyaska
+  parent: BaseVehicle
+  name: Kolyaska
+  description: The future of transportation. Popularized by St. James, the patron saint of security officers and internet forum moderators.
+  components:
+  - type: Vehicle
+    northOnly: true
+    northOverride: -0.1
+    southOverride: 0.1
+    hornSound:
+      path: /Audio/Effects/Vehicle/policesiren.ogg
+  - type: Sprite
+    sprite: Pidoras/Objects/Vehicle/kolyaska.rsi
+    layers:
+    - state: vehicle
+      map: ["enum.VehicleVisualLayers.AutoAnimate"]
+    netsync: false
+    noRot: true
+  - type: Strap
+    buckleOffset: "0.15, -0.05"
+    maxBuckleDistance: 1
+  - type: MovementSpeedModifier
+    acceleration: 1
+    friction: 1
+    baseWalkSpeed: 4.5
+    baseSprintSpeed: 6
+  - type: Armor
+    modifiers:
+      coeffecients:
+        Blunt: 0.8
+        Slash: 0.6
+        Piercing: 0.85
+  - type: ItemSlots
+    slots:
+      key_slot:
+        name: Keys
+        whitelist:
+          requireAll: true
+          tags:
+          - VehicleKey
+          - VehicleKeyKolyaska
+        insertSound:
+          path: /Audio/Effects/Vehicle/vehiclestartup.ogg
+          params:
+            volume: -3

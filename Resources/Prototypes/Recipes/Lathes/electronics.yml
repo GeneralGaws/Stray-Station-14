@@ -549,3 +549,36 @@
   materials:
     Steel: 350
     Glass: 350
+
+- type: latheRecipe
+  id: ThrusterCircuitboard
+  result: ThrusterMachineCircuitboard
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 900
+
+- type: latheRecipe
+  id: GyroscopeMachineCircuitboard
+  result: GyroscopeMachineCircuitboard
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 900
+
+- type: latheRecipe
+  id: ShuttleConsoleCircuitboard
+  result: ShuttleConsoleCircuitboard
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 900
+     Gold: 100
+
+- type: latheRecipe
+  id: RadarConsoleCircuitboard
+  result: RadarConsoleCircuitboard
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 900

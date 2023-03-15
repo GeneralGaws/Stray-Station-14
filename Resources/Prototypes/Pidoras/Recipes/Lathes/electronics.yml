@@ -1,0 +1,50 @@
+- type: latheRecipe
+  id: SolarTrackerElectronics
+  result: SolarTrackerElectronics
+  completetime: 4
+  materials:
+    Steel: 200
+    Glass: 900
+    Gold: 300
+
+- type: latheRecipe
+  id: BaseResearchAndDevelopmentPointSourceCircuitBoard
+  result: BaseResearchAndDevelopmentPointSourceCircuitBoard
+  completetime: 4
+  materials:
+    Steel: 500
+    Glass: 900
+    Gold: 1000
+
+- type: latheRecipe
+  id: MedicalTechFabCircuitboard
+  result: MedicalTechFabCircuitboard
+  completetime: 4
+  materials:
+    Steel: 100
+    Glass: 900
+    Gold: 100
+
+- type: latheRecipe
+  id: ScienceTechFabCircuitboard
+  result: ScienceTechFabCircuitboard
+  completetime: 4
+  materials:
+    Steel: 100
+    Glass: 900
+
+- type: latheRecipe
+  id: ServiceTechFabCircuitboard
+  result: ServiceTechFabCircuitboard
+  completetime: 4
+  materials:
+    Steel: 100
+    Glass: 900
+
+- type: latheRecipe
+  id: EngineeringTechFabCircuitboard
+  result: EngineeringTechFabCircuitboard
+  completetime: 4
+  materials:
+    Steel: 100
+    Glass: 900

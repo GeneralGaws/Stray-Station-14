@@ -211,6 +211,7 @@
       - PowerCellSmall
       - PowerCellMedium
       - PowerCellHigh
+      - PowerCellBluespaceCraft
       - FlashPayload
       - BikeHorn
 
@@ -312,6 +313,10 @@
       - RadarConsoleCircuitboard
       - ThrusterMachineCircuitboard
       - GyroscopeMachineCircuitboard
+      - CellRechargerCircuitBoard
+      - RechargerCircuitBoard
+      - BluespaceWeaponCapacitorRechargerCircuitBoard
+      - PowerCellRechargerBluespaceCircuitBoard
   - type: MaterialStorage
     whitelist:
       tags:
@@ -355,7 +360,7 @@
     - JetpackMini
     - MakeshiftHelmet
     - ClothingOuterArmorMakeshift
-    - MakeshiftLaser
+    - MakeshiftRnDLaser
   - type: MaterialStorage
     whitelist:
       tags:
@@ -441,7 +446,6 @@
       - CableStack
       - CableMVStack
       - CableHVStack
-      - MakeshiftLaser
   - type: MaterialStorage
     whitelist:
       tags:

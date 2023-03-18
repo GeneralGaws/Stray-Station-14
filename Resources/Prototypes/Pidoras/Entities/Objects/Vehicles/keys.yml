@@ -9,6 +9,6 @@
     - VehicleKey
     - VehicleKeyKolyaska
   - type: Sprite
-    sprite: Objects/Vehicles/secway.rsi
+    sprite: Pidoras/Objects/Vehicle/kolyaskakey.rsi
     state: keys
     netsync: false

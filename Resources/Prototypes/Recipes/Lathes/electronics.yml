@@ -551,7 +551,7 @@
     Glass: 350
 
 - type: latheRecipe
-  id: ThrusterCircuitboard
+  id: ThrusterMachineCircuitboard
   result: ThrusterMachineCircuitboard
   completetime: 4
   materials:
@@ -575,10 +575,3 @@
      Glass: 900
      Gold: 100
 
-- type: latheRecipe
-  id: RadarConsoleCircuitboard
-  result: RadarConsoleCircuitboard
-  completetime: 4
-  materials:
-     Steel: 100
-     Glass: 900

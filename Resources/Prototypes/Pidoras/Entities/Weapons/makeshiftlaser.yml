@@ -1,7 +1,7 @@
 - type: entity
-  name: Makeshift laser pistol
+  name: Laser pistol prototype
   parent: BaseWeaponBatterySmall
-  id: MakeshiftLaser
+  id: MakeshiftRnDLaser
   description: Not for revolution!
   components:
   - type: Sprite
@@ -9,29 +9,99 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-unshaded-4
+    - state: mag-unshaded-0
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
+    - state: light-icon
+      shader: unshaded
+      visible: false
+      map: [ "light" ]
   - type: Clothing
     sprite: Pidoras/Objects/Weapons/Pistol/RnDLaserPistol.rsi
     state: base
-  - type: HitscanBatteryAmmoProvider
-    proto: RedSmallLaser
+  - type: ProjectileBatteryAmmoProvider
+    proto: RnDPistolBolt
     fireCost: 150
   - type: Battery
     maxCharge: 900
     startingCharge: 0
   - type: MagazineVisuals
     magState: mag
-    steps: 6
+    steps: 7
     zeroVisible: true
   - type: Appearance
-  - type: TriggerOnActivate
-    prob: 0.9
-  - type: ExplodeOnTrigger
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 5
+  - type: DamageWeaponOnHit
+    damage:
+      types:
+        Blunt: 5
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
   - type: Explosive
     explosionType: Default
-    maxIntensity: 10
-    intensitySlope: 3
-    totalIntensity: 120
+    maxIntensity: 1
+    intensitySlope: 1
+    totalIntensity: 20
     canCreateVacuum: false
+  - type: HandheldLight
+    addPrefix: false
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        interpolate: Linear
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        property: Radius
+        enabled: false
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        minValue: 0.1
+        maxValue: 2.0
+        isLooped: true
+        property: Radius
+        enabled: false
+    toggleAction:
+      name: action-name-toggle-light
+      description: action-description-toggle-light
+      icon: { sprite: Objects/Tools/flashlight.rsi, state: flashlight }
+      iconOn: Objects/Tools/flashlight.rsi/flashlight-on.png
+      event: !type:ToggleActionEvent
+  - type: ToggleableLightVisuals
+    spriteLayer: light
+    inhandVisuals:
+      left:
+      - sprite: Pidoras/Objects/Weapons/Pistol/RnDLaserPistol.rsi
+      - state: inhand-left-light
+        shader: unshaded
+      right:
+      - sprite: Pidoras/Objects/Weapons/Pistol/RnDLaserPistol.rsi
+      - state: inhand-right-light
+        shader: unshaded
+  - type: PointLight
+    netsync: false
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    radius: 6

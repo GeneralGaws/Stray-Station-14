@@ -48,3 +48,38 @@
   materials:
     Steel: 100
     Glass: 900
+
+- type: latheRecipe
+  id: CellRechargerCircuitBoard
+  result: CellRechargerCircuitBoard
+  completetime: 2
+  materials:
+    Steel: 200
+    Glass: 200
+
+- type: latheRecipe
+  id: RechargerCircuitBoard
+  result: RechargerCircuitBoard
+  completetime: 3
+  materials:
+    Steel: 300
+    Glass: 300
+
+- type: latheRecipe
+  id: BluespaceWeaponCapacitorRechargerCircuitBoard
+  result: BluespaceWeaponCapacitorRechargerCircuitBoard
+  completetime: 3
+  materials:
+    Steel: 300
+    Glass: 500
+    Gold: 200
+
+- type: latheRecipe
+  id: PowerCellRechargerBluespaceCircuitBoard
+  result: PowerCellRechargerBluespaceCircuitBoard
+  completetime: 3
+  materials:
+    Steel: 300
+    Glass: 300
+    Gold: 100
+

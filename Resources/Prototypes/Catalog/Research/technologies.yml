@@ -539,6 +539,7 @@
   - ElectromagneticTheory
   unlockedRecipes:
   - PowerCellSmall
+  - CellRechargerCircuitBoard
 
 - type: technology
   name: technologies-advanced-powercell-printing
@@ -552,6 +553,7 @@
   - PowerCellBasic
   unlockedRecipes:
   - PowerCellMedium
+  - RechargerCircuitBoard
 
 - type: technology
   name: technologies-super-powercell-printing
@@ -565,6 +567,22 @@
   - PowerCellAdvanced
   unlockedRecipes:
   - PowerCellHigh
+
+- type: technology
+  name: Bluespace powercell
+  id: PowerCellBluespaceTechnology
+  description: Using bluespace technology in powercell printing
+  icon:
+    sprite: Pidoras/Objects/Power/Powercell/Bluespace.rsi
+    state: icon
+  requiredPoints: 8000
+  requiredTechnologies:
+  - PowerCellSuper
+  - BluespaceTechnology
+  unlockedRecipes:
+  - PowerCellBluespaceCraft
+  - BluespaceWeaponCapacitorRechargerCircuitBoard
+  - PowerCellRechargerBluespaceCircuitBoard
 
 - type: technology
   name: technologies-adv-parts-technology

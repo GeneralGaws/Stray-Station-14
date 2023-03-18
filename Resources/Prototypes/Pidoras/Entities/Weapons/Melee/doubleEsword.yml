@@ -1,0 +1,55 @@
+- type: entity
+  name: Double energy sword
+  parent: BaseItem
+  id: DoubleEnergySword
+  description: A very dangerous energy sword. Can be stored in pockets when turned off. Makes a lot of noise when used or turned on.
+  components:
+  - type: EnergySword
+    litDamageBonus:
+        types:
+            Heat: 30
+            Blunt: 5
+    litDisarmMalus: 0.6
+  - type: Sprite
+    sprite: Pidoras/Objects/Weapons/Melee/DoubleEnergySword.rsi
+    layers:
+      - state: double_e_sword
+      - state: double_e_sword_blade
+        color: "#FFFFFF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: MeleeWeapon
+    range: 1.75
+    attackRate: 1.5
+    soundHit:
+      path: /Audio/Weapons/genhit1.ogg
+    damage:
+      types:
+        Blunt: 4.5
+  - type: Item
+    size: 10
+    sprite: Pidoras/Objects/Weapons/Melee/DoubleEnergySword.rsi
+  - type: UseDelay
+    delay: 1.0
+  - type: PointLight
+    netsync: false
+    enabled: false
+    radius: 2
+    energy: 2
+    color: white
+  - type: Appearance
+  - type: ToggleableLightVisuals
+    spriteLayer: blade
+    inhandVisuals:
+      left:
+      - state: inhand-left-blade
+        shader: unshaded
+      right:
+      - state: inhand-right-blade
+        shader: unshaded
+  - type: DisarmMalus
+    malus: 0
+  - type: Construction
+    graph: DoubleESwordWD
+    node: doubleenergysword

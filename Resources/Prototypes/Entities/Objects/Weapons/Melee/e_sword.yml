@@ -50,6 +50,9 @@
         shader: unshaded
   - type: DisarmMalus
     malus: 0
+  - type: Construction
+    graph: DoubleESwordWD
+    node: esword
 
 - type: entity
   name: pen

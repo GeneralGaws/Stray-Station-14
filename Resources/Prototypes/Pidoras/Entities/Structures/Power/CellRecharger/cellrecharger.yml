@@ -1,0 +1,10 @@
+- type: entity
+  name: Bluespace cell recharger
+  id: PowerCellRechargerBluespace
+  parent: PowerCellRecharger
+  components:
+  - type: Sprite
+    sprite: Pidoras/Structures/Power/Recharger/CellRechargerBluespace.rsi
+  - type: Charger
+    slotId: charger_slot
+    chargeRate: 75

@@ -37,3 +37,12 @@
   category: Equal
   components:
     - type: MobsterAccent
+
+- type: trait
+  id: PrisonerAccent
+  name: Prisoner Accent
+  description: Ey, boss! This guy can understands us! Capiche?
+  cost: 0
+  category: Equal
+  components:
+    - type: PrisonerAccent

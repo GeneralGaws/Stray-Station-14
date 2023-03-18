@@ -12,6 +12,11 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 3600
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: PrisonerAccent
+
 
 - type: startingGear
   id: PrisonerGear

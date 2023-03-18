@@ -1,0 +1,19 @@
+- type: entity
+  name: Bluespace recharger
+  id: BluespaceWeaponCapacitorRecharger
+  parent: PowerCellRecharger
+  components:
+  - type: Sprite
+    sprite: Pidoras/Structures/Power/Recharger/RechargerBluespace.rsi
+  - type: Charger
+    chargeRate: 70
+    slotId: charger_slot
+  - type: ItemSlots
+    slots:
+      charger_slot:
+        ejectOnInteract: true
+        whitelist:
+          components:
+          - HitscanBatteryAmmoProvider
+          - ProjectileBatteryAmmoProvider
+          - Stunbaton

@@ -1,0 +1,14 @@
+- type: constructionGraph
+  id: DoubleESwordWD
+  start: esword
+  graph:
+    - node: esword
+      edges:
+        - to: doubleenergysword
+          steps:
+          - component: EnergySword
+            store: EnergySword
+            name: Sword
+            doAfter: 2
+    - node: doubleenergysword
+      entity: DoubleEnergySword

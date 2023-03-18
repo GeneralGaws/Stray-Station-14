@@ -1,0 +1,20 @@
+- type: entity
+  name: Bluespace power cell
+  description: A small cell that self recharges. Used in old laser arms research.
+  id: PowerCellBluespaceCraft
+  parent: BasePowerCell
+  components:
+    - type: Sprite
+      sprite: Pidoras/Objects/Power/Powercell/Bluespace.rsi
+      layers:
+      - map: [ "enum.PowerCellVisualLayers.Base" ]
+        state: icon
+      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+        state: o2
+        shader: unshaded
+    - type: Battery
+      maxCharge: 2000
+      startingCharge: 0
+    - type: BatterySelfRecharger
+      autoRecharge: true
+      autoRechargeRate: 5

@@ -671,3 +671,6 @@
 
 - type: Tag
   id: VehicleKeyKolyaska
+
+- type: Tag
+  id: EnergySword

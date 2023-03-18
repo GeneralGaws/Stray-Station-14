@@ -1,6 +1,6 @@
 - type: latheRecipe
-  id: MakeshiftLaser
-  result: MakeshiftLaser
+  id: MakeshiftRnDLaser
+  result: MakeshiftRnDLaser
   completetime: 4
   materials:
     Steel: 1000

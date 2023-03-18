@@ -14,3 +14,62 @@
       materialRequirements:
        PlasmaGlass: 5
        Cable: 5
+
+- type: entity
+  id: CellRechargerCircuitBoard
+  parent: BaseMachineCircuitboard
+  name: Cell recharger circuit board
+  components:
+    - type: Sprite
+      state: service
+    - type: MachineBoard
+      prototype: CellRechargerCircuitBoard
+      requirements:
+       Capacitor: 2
+       MatterBin: 1
+
+- type: entity
+  id: RechargerCircuitBoard
+  parent: BaseMachineCircuitboard
+  name: Recharger circuit board
+  components:
+    - type: Sprite
+      state: service
+    - type: MachineBoard
+      prototype: CellRechargerCircuitBoard
+      requirements:
+       Capacitor: 2
+       MatterBin: 1
+       Laser: 1
+
+- type: entity
+  id: BluespaceWeaponCapacitorRechargerCircuitBoard
+  parent: BaseMachineCircuitboard
+  name: Bluespace recharger circuit board
+  components:
+    - type: Sprite
+      state: service
+    - type: MachineBoard
+      prototype: CellRechargerCircuitBoard
+      requirements:
+       Capacitor: 4
+       MatterBin: 4
+       Laser: 4
+      materials:
+       PlasmaGlass: 3
+
+- type: entity
+  id: PowerCellRechargerBluespaceCircuitBoard
+  parent: BaseMachineCircuitboard
+  name: Bluespace cell recharger circuit board
+  components:
+    - type: Sprite
+      state: service
+    - type: MachineBoard
+      prototype: CellRechargerCircuitBoard
+      requirements:
+       Capacitor: 4
+       MatterBin: 4
+       Laser: 4
+      materials:
+       Plasma: 5

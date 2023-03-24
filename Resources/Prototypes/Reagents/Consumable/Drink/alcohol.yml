@@ -119,6 +119,12 @@
         - !type:ReagentThreshold
           reagent: Ethanol
           min: 3
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: -0.05
     Alcohol:
       effects:
       - !type:Drunk

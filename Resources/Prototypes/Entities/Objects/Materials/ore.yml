@@ -155,6 +155,8 @@
     stackType: UraniumOre
   - type: Sprite
     state: uranium
+  - type: RadiationSource
+    intensity: 0.7
   - type: Material
     materials:
       Uranium: 500

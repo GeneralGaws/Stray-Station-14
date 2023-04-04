@@ -143,6 +143,8 @@
       - id: HandTeleporter
       - id: PlushieSlime
         prob: 0.1
+      - id: PlushieScientist
+        prob: 0.15
       - id: DoorRemoteResearch
       - id: RubberStampRd
       - id: ClothingHeadsetAltScience

@@ -1,0 +1,14 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieScientist
+  name: Scientist plushie
+  description: Pray to artifacts, anomalies, and you supervisor
+  components:
+  - type: Sprite
+    sprite: Pidoras/Fun/toys.rsi
+    state: plushie_scientist
+  - type: Butcherable
+    butcheringType: Knife
+    spawned:
+    - id: ResearchDisk
+      amount: 1

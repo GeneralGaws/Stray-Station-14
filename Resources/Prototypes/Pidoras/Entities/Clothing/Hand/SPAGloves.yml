@@ -1,0 +1,22 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesSPA
+  name: SPA gloves
+  description: Electrifiyng.
+  components:
+  - type: Sprite
+    sprite: Pidoras/Clothing/Hands/SPAGloves.rsi
+  - type: Clothing
+    sprite: Pidoras/Clothing/Hands/SPAGloves.rsi
+  - type: MeleeWeapon
+    attackRate: 1.5
+    damage:
+      types:
+        Holy: 2
+    animation: WeaponArcFist
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-regal-blue
+  - type: FingerprintMask
+  - type: ClothingGrantPsionicPower
+    power: NoosphericZapPower

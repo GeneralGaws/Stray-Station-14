@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: assaultneck
+  name: assault neck
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/suspenders.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Belt/suspenders.rsi

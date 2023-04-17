@@ -15,3 +15,32 @@
         Slash: 0.85
         Piercing: 0.9
         Heat: 0.85
+
+- type: entity
+  name: S.P.A helmet
+  parent: ClothingHeadHardsuitWithLightBase
+  id: SPAHelmet
+  description: Maybe its will stand a few shots
+  components:
+  - type: Sprite
+    sprite: Pidoras/Clothing/helmet/SPAHelmet.rsi
+  - type: Clothing
+    sprite: Pidoras/Clothing/helmet/SPAHelmet.rsi
+  - type: PointLight
+    color: "#d6adff"
+  - type: PressureProtection
+    highPressureMultiplier: 0.60
+    lowPressureMultiplier: 5500
+  - type: Psionic
+  - type: TinfoilHat
+    passthrough: true
+    destroyOnFry: false
+  - type: ClothingGrantPsionicPower
+    power: MetapsionicPower
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.9
+        Heat: 0.85

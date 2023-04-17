@@ -1,0 +1,16 @@
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackERTSecurity
+  id: ClothingBackpackSPASecurity
+  components:
+    - type: StorageFill
+      contents:
+        - id: BoxSurvival
+        - id: WeaponDisabler
+        - id: PillMindbreakerToxin
+        - id: PillCryptobiolin
+        - id: Handcuffs
+        - id: WeaponLaserCarbine
+        - id: ResearchDisk5000
+        - id: DrinkHolyWaterFull
+

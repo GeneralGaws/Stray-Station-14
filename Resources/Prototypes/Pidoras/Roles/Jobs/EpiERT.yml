@@ -1,0 +1,28 @@
+- type: job
+  id: SPASecurity
+  name: job-name-spasecurity
+  description: job-description-spasecurity
+  playTimeTracker: JobSPASecurity
+  setPreference: false
+  startingGear: SPASecurity
+  icon: "Nanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+
+- type: startingGear
+  id: SPASecurity
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitResearchDirector
+    back: ClothingBackpackSPASecurityFilled
+    shoes: ClothingShoesBootsMag
+    head: ClothingHeadHelmetHelmet
+    mask: ClothingMaskBreath
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesSPA
+    outerClothing: ClothingOuterHardsuitSPA
+    id: ERTLeaderPDA
+    ears: ClothingHeadsetAltCommand
+    belt: ClothingBeltMantis #другое надо сделать, фласка нужна
+    pocket1: Flare

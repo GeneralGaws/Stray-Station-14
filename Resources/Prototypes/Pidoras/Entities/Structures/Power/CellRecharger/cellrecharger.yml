@@ -4,7 +4,7 @@
   parent: PowerCellRecharger
   components:
   - type: Sprite
-    sprite: Pidoras/Structures/Power/Recharger/CellRechargerBluespace.rsi
+    sprite: Pidoras/Structures/Power/CellRecharger/CellRechargerBluespace.rsi
   - type: Charger
     slotId: charger_slot
     chargeRate: 75

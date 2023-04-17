@@ -151,6 +151,8 @@
       - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyScience
       - id: BoxEncryptionKeyRobo
+      - id: CircuitImprinterMachineCircuitboard
+      - id: ProtolatheMachineCircuitboard
 
 - type: entity
   id: LockerHeadOfSecurityFilled

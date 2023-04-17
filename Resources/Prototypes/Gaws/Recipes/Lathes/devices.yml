@@ -1,0 +1,17 @@
+- type: latheRecipe
+  id: PinpointerArtifact
+  result: PinpointerArtifact
+  completetime: 2
+  materials:
+    Steel: 200
+    Plastic: 100
+    Glass: 100
+
+- type: latheRecipe
+  id: PinpointerAnomaly
+  result: PinpointerAnomaly
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 200
+    Glass: 200

@@ -54,6 +54,9 @@
       - CableMVStack
       - CableHVStack
       - NodeScanner
+      - PinpointerAnomaly
+      - PinpointerArtifact
+
   - type: MaterialStorage
     whitelist:
       tags:
@@ -131,6 +134,8 @@
       - CableStack
       - CableMVStack
       - CableHVStack
+      - PinpointerAnomaly
+      - PinpointerArtifact
   - type: MaterialStorage
     whitelist:
       tags:

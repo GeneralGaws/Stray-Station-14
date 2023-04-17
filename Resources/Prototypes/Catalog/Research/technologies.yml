@@ -57,6 +57,7 @@
   - MicrowaveMachineCircuitboard
   - BoozeDispenserMachineCircuitboard
   - SodaDispenserMachineCircuitboard
+  - ServiceTechFabCircuitboard
 
 # Biological Technology Tree
 
@@ -347,6 +348,23 @@
   - OreProcessorMachineCircuitboard
 
 - type: technology
+  name: technologies-spacefaring
+  id: SpacefaringTechnology
+  description: technologies-spacefaring-description
+  icon:
+    sprite: Structures/Shuttles/gyroscope.rsi
+    state: base
+  requiredPoints: 10000
+  requiredTechnologies:
+  - SalvageEquipment
+  - IndustrialEngineering
+  unlockedRecipes:
+  - ShuttleConsoleCircuitboard
+  - RadarConsoleCircuitboard
+  - ThrusterMachineCircuitboard
+  - GyroscopeMachineCircuitboard
+
+- type: technology
   name: technologies-ripley-technology
   id: RipleyTechnology
   description: technologies-ripley-technology-description
@@ -392,6 +410,7 @@
   - AirAlarmElectronics
   - FireAlarmElectronics
   - MailingUnitElectronics
+  - EngineeringTechFabCircuitboard
 
 - type: technology
   name: technologies-material-sheet-printing
@@ -634,6 +653,7 @@
   unlockedRecipes:
   - TechDiskComputerCircuitboard
   - NodeScanner
+  - ScienceTechFabCircuitboard
   - AnomalyScanner
 
 - type: technology
@@ -649,6 +669,7 @@
   unlockedRecipes:
   - AnomalyVesselCircuitboard
   - APECircuitboard
+  - PinpointerAnomaly
 
 - type: technology
   name: technologies-archaeology
@@ -664,6 +685,7 @@
   - AnalysisComputerCircuitboard
   - ArtifactAnalyzerMachineCircuitboard
   - TraversalDistorterMachineCircuitboard
+  - PinpointerArtifact
 
 - type: technology
   name: technologies-bluespace-technology

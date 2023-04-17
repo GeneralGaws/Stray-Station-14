@@ -1,0 +1,49 @@
+- type: latheRecipe
+  id: ScienceTechFabCircuitboard
+  result: ScienceTechFabCircuitboard
+  completetime: 4
+  materials:
+    Steel: 100
+    Glass: 900
+
+- type: latheRecipe
+  id: ServiceTechFabCircuitboard
+  result: ServiceTechFabCircuitboard
+  completetime: 4
+  materials:
+    Steel: 100
+    Glass: 900
+
+- type: latheRecipe
+  id: EngineeringTechFabCircuitboard
+  result: EngineeringTechFabCircuitboard
+  completetime: 4
+  materials:
+    Steel: 100
+    Glass: 900
+
+
+- type: latheRecipe
+  id: ThrusterMachineCircuitboard
+  result: ThrusterMachineCircuitboard
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 900
+
+- type: latheRecipe
+  id: GyroscopeMachineCircuitboard
+  result: GyroscopeMachineCircuitboard
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 900
+
+- type: latheRecipe
+  id: ShuttleConsoleCircuitboard
+  result: ShuttleConsoleCircuitboard
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 900
+     Gold: 100

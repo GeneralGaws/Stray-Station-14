@@ -301,6 +301,13 @@
       - BoozeDispenserMachineCircuitboard
       - SodaDispenserMachineCircuitboard
       - TelecomServerCircuitboard
+      - EngineeringTechFabCircuitboard
+      - ScienceTechFabCircuitboard
+      - ServiceTechFabCircuitboard
+      - ShuttleConsoleCircuitboard
+      - RadarConsoleCircuitboard
+      - ThrusterMachineCircuitboard
+      - GyroscopeMachineCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
